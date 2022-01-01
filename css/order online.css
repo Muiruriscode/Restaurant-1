@@ -1,0 +1,102 @@
+body {
+    background: url("/images/bar.jpg");
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
+}
+#order-online-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#chip {
+    width: 3rem;
+}
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 20px;
+    padding: 20px 0;
+    font-size: 13px;
+    background-color: #24190e;
+  }
+  
+  nav ul {
+    display: flex;
+  }
+  
+  nav ul li {
+    padding: 0 10px;
+    list-style: none;
+  }
+  
+  nav ul li a {
+    padding-bottom: 2px;
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: #ccc;
+  }
+  
+  nav ul li a:hover {
+    color: #fff
+  }
+  
+  
+.order-online-form{
+    background: linear-gradient(to bottom right, rgba(0,0,0, 0.2), rgba(0,0,0, 0.0.01));
+    box-shadow: 0 1rem 2rem rgba(0,0,0,0.5), -1px -1px 2px #aaa, 1px 1px 2px #555;
+    backdrop-filter: blur(0.8rem);
+    padding: 1.1rem;
+    border-radius: 1rem;
+}
+.order-elements {
+    display:flex;
+    flex-direction: column;
+    justify-content: space between;
+    padding-bottom: 2rem;
+}
+.contact {
+   color: #f4f4f4; 
+}
+input {
+    background: none;
+    border: none;
+    border-bottom: dashed 1px #ccc;
+    font-size: 1.3rem;
+    color: #f4f4f4;
+    text-shadow: 0 2px 2px rgba(0,0,0,0.3);
+    margin: 10px 0;
+}
+
+input:focus{
+    outline: none;
+    border-color: rgba(255,255,255, 0.5);
+}
+
+input::placeholder {
+    color: rgb(32, 32, 32);
+    text-shadow: none;
+    font-weight: 100;
+}
+label {
+    text-shadow: rgba(0,0,0, 0.5);
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin:10px 0;
+}
+select{
+  background-color: rgb(255, 255, 255);
+  border: none;
+  color: black;
+  font-size: 1rem;
+}
+
+option{
+  background-color: rgba(255,255,255, 0.9);
+}
+

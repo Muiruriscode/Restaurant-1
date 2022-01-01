@@ -1,0 +1,374 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ccc;
+}
+h2 {
+  font-style: italic;
+}
+input {
+  padding: 5px;
+  width: 80%;
+}
+input:invalid {
+  border: 1px dashed red;
+}
+input:valid {
+  border: 1px solid black;
+}
+textarea {
+  width: 80%;
+}
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 20px;
+  padding: 20px 0;
+  font-size: 13px;
+  background-color: #24190e;
+  z-index: 20;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  padding: 0 10px;
+  list-style: none;
+}
+
+nav ul li a {
+  padding-bottom: 2px;
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: #ccc;
+}
+
+nav ul li a:hover {
+  color: #fff;
+}
+table {
+    color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+}
+
+#form-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#form-section h1 {
+  color: #f4f4f4;
+  font-size: 1.6rem;
+}
+
+#form-reservation {
+  width: 400px;
+  border-radius: 5px;
+  background-color: rgba(36, 13, 3, 0.9);
+  padding: 20px 0 20px 60px;
+  align-items: center;
+}
+
+#wines-beer-section {
+  background-color: #24190e;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  padding: 10px 20px;
+}
+#wines-beer-section img {
+  width: 300px;
+  border-radius: 5px;
+  height: 200px;
+}
+
+#wines-beer-section img:hover {
+  transform: scale(1.02);
+  transition: transform 0.2s ease-in-out;
+}
+
+#wines-beer-section div {
+  margin: 10px;
+}
+
+#wines-beer-section div p {
+  margin-bottom: 0;
+}
+#wines-beer-section div h3 {
+  color: yellow;
+  border-bottom: 0;
+}
+#dessert-section {
+  background-color: #24190e;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  color: #f4f4f4;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+#dessert-section img {
+  width: 300px;
+  border-radius: 5px;
+}
+
+#dessert-section img:hover {
+  transform: scale(1.02);
+  transition: transform 0.2s ease-in-out;
+}
+
+#dessert-section div {
+  margin: 10px;
+}
+
+#dessert-section div h1 {
+  margin-top: 5px;
+}
+
+#dessert-section div p {
+  margin-bottom: 0;
+}
+
+#dessert-section div h3 {
+  color: yellow;
+  border-bottom: 0;
+}
+
+#menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #24190e;
+  color: rgb(0, 0, 0);
+}
+#menu h1 {
+  font-size: 2rem;
+}
+.background {
+  background: url("/images/restaurant.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #f4f4f4;
+}
+.center {
+  text-align: center;
+}
+.flex {
+  display: flex;
+}
+.special {
+  width: auto;
+  margin-bottom: 3px;
+}
+.beer {
+  width: 100%;
+  height: 400px;
+  background-image: url("/images/menu.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 20px;
+}
+.dessert {
+  height: 400px;
+  width: 100%;
+  background-image: url("/images/ice-cream.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.dessert h1 {
+  margin-top: 0;
+  padding-top: 80px;
+}
+.beer h1 {
+  padding-top: 100px;
+}
+.margin {
+  margin: 10px 0;
+}
+.menu-closeup {
+  position: fixed;
+  width: 100%;
+  height: 500px;
+  z-index: 1;
+}
+.menu-section {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin-top: 130px;
+  z-index: 2;
+}
+.menu-section p {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+.menu-text {
+  margin-bottom: 200px;
+  color: #fff;
+}
+
+.menu-text h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+.menu-text p {
+  font-size: 1.4rem;
+}
+.link {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+.menu-link {
+  text-decoration: none;
+  color: #f4f4f4;
+  font-size: 1.4rem;
+  padding: 10px;
+  background-color: rgb(87, 39, 1);
+  border-radius: 5%;
+}
+
+.menu-link:hover {
+  background-color: rgb(110, 50, 1);
+}
+
+.main-header {
+  margin-top: 100px;
+}
+.menu-nav {
+  margin-bottom: 0;
+}
+
+@media (max-width: 980px) {
+  #wines-beer-section {
+    grid-template-columns: 1fr 1fr;
+  }
+  #dessert-section {
+    grid-template-columns: 1fr 1fr;
+  }
+  .flex {
+    flex-direction: column;
+  }
+  .menu-closeup {
+    display: none;
+  }
+  .dessert ul li {
+    list-style: none;
+  }
+}
+
+@media (max-width: 500px) {
+  nav {
+    display: none;
+  }
+  #wines-beer-section {
+    grid-template-columns: 1fr;
+  }
+  #dessert-section {
+    grid-template-columns: 1fr;
+  }
+  #form-reservation {
+    width: 100%;
+    background-color: rgb(34, 14, 4);
+    align-items: center;
+    color: #f4f4f4;
+  }
+  #form-section h1 {
+    color: #eee;
+  }
+  #menu {
+    width: 100%;
+    background-color: #0c0701;
+    color: #f4f4f4;
+  }
+  #menu h1 {
+    font-size: 1.4rem;
+  }
+  #about-us-img {
+    display: none;
+  }
+  .dessert {
+    background: none;
+  }
+  .beer {
+    background: none;
+  }
+  .background {
+    background: rgb(34, 14, 4);
+    color: #eee;
+  }
+  .background section hr {
+    display: none;
+  }
+
+  .background section p {
+    display: none;
+  }
+  .center {
+    margin: 5px;
+  }
+  input:invalid {
+    border: 1px solid red;
+  }
+  .margin {
+    margin: 5px 0;
+  }
+  .menu-text {
+    margin-bottom: 0px;
+  }
+  .menu-closeup {
+    height: 50px;
+  }
+  .dessert h1 {
+    margin-top: 0;
+    padding-top: 20px;
+  }
+  .beer {
+    height: 200px;
+  }
+  .dessert {
+    height: 200px;
+  }
+  .beer h1 {
+    padding-top: 30px;
+  }
+
+  .menu-section {
+    margin-top: 50px;
+  }
+  .menu-section p {
+    font-size: 1rem;
+    font-weight: 200;
+  }
+  .dessert h2 {
+    display: none;
+  }
+  .dessert ul {
+    display: none;
+  }
+  .menu-link {
+    font-size: 1.1rem;
+    padding: 5px;
+    border-radius: 2%;
+  }
+}

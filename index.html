@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Rucker's, Best Steakhouse in Scottsdale, quality steak, amazing wine, quiet atmosphere, mountain-themed restaurant ">
+    <title>Rucker's</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="background">
+    <header id="header">
+        <nav id="nav-bar">
+        <ul>
+            <li class="hide-on-small">
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="menu.html">Menu</a>
+            </li>
+            <li>
+                <a href="order online.html">Order online</a>
+            </li>
+            <li>
+                <a href="About us.html">About us</a>
+            </li>
+        </ul> 
+        <div>
+            <p>(602) 789-5672</p>
+            <p>staff@ruckers.com.</p>
+        </div>                    
+</nav>
+</header>
+<section>
+  <h1 class="center main-header" >Rucker's</h1>  
+  <h2 class= "center">The best steak in Scottsdale!</h2>
+  <p class="center">
+    555 Mountainview Ave.
+    Scottsdale, AZ 85260
+    (602) 789-5672
+  </p>
+  <p class="center">
+    Welcome to Rucker’s, which has been voted Best Steakhouse in Scottsdale four years running! 
+    At Rucker’s you can enjoy a quality steak, amazing wine, and a quiet atmosphere in a mountain-themed restaurant. 
+    Rucker’s has been a tradition in Scottsdale since 1975 and is an amazing place to dine.
+  </p>
+
+  <div>
+  </div>
+  <hr>
+  <section id="form-section">
+      <h1>Make A Reservation</h1>
+    <form id="form-reservation">
+        <Label for="first-name" id="first-name-label" class="margin">First Name: </Label><br>
+            <Input type="text"  
+                name="first-name" 
+                id="first-name" 
+                class="margin" 
+                required 
+                placeholder="First Name"><br>
+            <Label for="last-name" id="last-name-label" class="margin">Last Name: </Label><br>
+            <Input type="text"  
+                name="last-name" 
+                id="last-name" 
+                class="margin" 
+                required 
+                placeholder="Last Name"><br>
+            <Label for="phone" id="phone-label" class="margin">Phone Number: </Label><br>
+            <!-- check -->
+            <Input type="tel" 
+                name="phone" 
+                id="phone" 
+                class="margin" 
+                placeholder="Phone number" 
+                required></Input><br>
+            <Label for="email" id="email-label" class="margin">Email: </Label><br>
+            <Input type="email" 
+                name="email" 
+                id="email" 
+                class="margin" 
+                placeholder="Email address" 
+                required></Input><br>
+            <Label for="guests" id="guests-label" class="margin">Number of guests </Label><br>
+            <Input type="number" 
+                name="guests" 
+                id="guests" 
+                class="margin" 
+                value="1" 
+                required></Input><br>
+            <div>
+                <input type="checkbox" id="male" name="male" value="male" class="special">
+                <label for="male">Male</label><br>
+                <input type="checkbox" id="female" name="female" value="female" class="special">
+                <label for="female"> Female</label><br>
+                <input type="checkbox" id="unknown" name="unknown" value="unknown" class="special">
+                <label for="unknown"> Prefer not to say</label><br>
+            </div>
+            <fieldset>
+                <legend>Is this your first time with us: </legend>
+                <Label for="my-radio" >
+                <Input type="radio" id="yes" name="my-radio" checked class="special">Yes</Input><br>
+                </Label>
+                <Label for="radio" >
+                <Input type="radio" id="no" name="my-radio" class="special">No</Input><br>
+            </Label>
+            </fieldset>
+
+            
+            <Label for="date" id="date-label" class="margin">Reservation date: </Label><br>
+            <Input type="datetime-local" 
+                name="date" 
+                id="date" 
+                value="2021-01-01T07:30"
+                class="margin" 
+                required>
+            </Input><br>
+            <p style="color: yellow; padding: 0 20px 0 0; margin-top: 0; display: none;" id="message" >
+                Open Mon-Sat: 11 a.m.-10 p.m, Sunday  12 p.m. - 8 p.m.
+            </p>
+            <Label for="requests" id="requests" class="margin">Special request: </Label><br>
+           <textarea name="requests" id="" cols="30" rows="5"></textarea><br>
+           <input type="button" name="submit" id="submit" value="Submit" class="margin"></input>
+           
+      </form>
+  </section>
+  
+
+</section>
+<footer class="center"><p>&copy; 2021 ruckers.com</p></footer>
+<script src="index.js"></script>
+</body>
+</html>
